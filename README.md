@@ -6,4 +6,4 @@ Contributors:
 - Suphi Erkin Karacay
 - Nihat Özdemir
 - Duygu Elif Dağlaroğlu
-- Kaan Bircangf
+- Kaan Bircan
