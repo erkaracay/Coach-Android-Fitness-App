@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements Type {
+public class MainActivity extends AppCompatActivity{
 
     float x1, y1, x2, y2;
 

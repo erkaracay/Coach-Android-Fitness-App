@@ -1,9 +1,10 @@
-package com.coach.finalproject_fitness;
+package extra;
+
+import com.coach.finalproject_fitness.Diet;
 
 import java.util.ArrayList;
 
 public class DietSys {
-
     public static ArrayList<Diet> mArrayList=new ArrayList<>();
     public static final String TAG_DIET = "diet";
     public static final String TAG_DAY = "day";
