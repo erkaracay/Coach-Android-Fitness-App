@@ -39,12 +39,10 @@ public class DietActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Hiding title bar using code
+        // Hiding title and status bars using code
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_diet);
-
-        // Hiding the status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_diet);
 
         recyclerView = findViewById(R.id.recyclerView);
         RecyclerViewAdapterDay adapterDay = new RecyclerViewAdapterDay(this,getData());
@@ -57,8 +55,8 @@ public class DietActivity extends AppCompatActivity {
     }
 
     private  ArrayList<Day> getData(){
-        for(int i = 0; i < data.length; i++){
-            arrayList.add(new Day(data[i], false));
+        for (String datum : data) {
+            arrayList.add(new Day(datum, false));
         }
         return arrayList;
     }

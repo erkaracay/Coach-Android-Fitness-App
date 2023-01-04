@@ -11,44 +11,45 @@
         android:id="@+id/tvDietMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="624dp"
-        android:layout_marginEnd="192dp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif-condensed"
         android:includeFontPadding="false"
-        android:text="Diet"
+        android:text="@string/diet"
         android:textAlignment="center"
         android:textColor="#D7FD00"
-        android:textSize="34sp"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Swipe" />
 
     <TextView
         android:id="@+id/tvWorkoutMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="140dp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif-condensed"
         android:includeFontPadding="false"
-        android:text="WorkOut"
+        android:text="@string/workout"
         android:textAlignment="center"
         android:textColor="#D7FD00"
-        android:textSize="34sp"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/Swipe"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Swipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/swipeupdown"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
