@@ -15,8 +15,8 @@
         android:text="@string/workout"
         android:textAlignment="center"
         android:textColor="#303030"
-        android:textSize="45sp"
-        android:textStyle="bold" />
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -1,29 +1,57 @@
 package com.coach.finalproject_fitness;
 
-import java.util.ArrayList;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Workout {
-    String day;
-    ArrayList<Exercise> exercises;
+public class Workout implements Parcelable {
+    private String name;
+    private Exercise exercise;
 
-    public Workout(String day, ArrayList<Exercise> exercises) {
-        this.day = day;
-        this.exercises = exercises;
+    public Workout(String name, Exercise exercise) {
+        this.name = name;
+        this.exercise = exercise;
     }
 
-    public String getDay() {
-        return day;
+    public String getName() {
+        return name;
     }
 
-    public void setDay(String day) {
-        this.day = day;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public ArrayList<Exercise> getExercises() {
-        return exercises;
+    public Exercise getExercise() {
+        return exercise;
     }
 
-    public void setExercises(ArrayList<Exercise> exercises) {
-        this.exercises = exercises;
+    public void setExercise(Exercise exercise) {
+        this.exercise = exercise;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    protected Workout(Parcel in) {
+        name = in.readString();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+    }
+
+    public static final Creator<Workout> CREATOR = new Creator<Workout>() {
+        @Override
+        public Workout createFromParcel(Parcel in) {
+            return new Workout(in);
+        }
+
+        @Override
+        public Workout[] newArray(int size) {
+            return new Workout[size];
+        }
+    };
 }
+

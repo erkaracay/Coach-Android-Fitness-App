@@ -58,20 +58,16 @@ public class RecyclerViewAdapterDay extends RecyclerView.Adapter<RecyclerViewAda
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            tv_day = itemView.findViewById(R.id.tv_day);
-            checkBox = itemView.findViewById(R.id.check);
-            dayItem = itemView.findViewById(R.id.dayItem);
+            tv_day = itemView.findViewById(R.id.tvExName);
+            checkBox = itemView.findViewById(R.id.checkDay);
+            dayItem = itemView.findViewById(R.id.workoutItem);
 
             checkBox.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     boolean isChecked =((CheckBox) v).isChecked();
 
-                    if(isChecked){
-                        arrayList.get(getAdapterPosition()).setSelected(true);
-                    }else {
-                        arrayList.get(getAdapterPosition()).setSelected(false);
-                    }
+                    arrayList.get(getAdapterPosition()).setSelected(isChecked);
 
                     notifyDataSetChanged(); //??
                     for(int i = 0; i < arrayList.size(); i++){

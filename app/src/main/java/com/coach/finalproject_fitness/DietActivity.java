@@ -25,15 +25,13 @@ public class DietActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<Day> arrayList = new ArrayList<>();
-    String[] data = new String[] {"Monday", "Tuesday", "Wednesday", "Thursday",
-            "Friday", "Saturday", "Sunday"};
+    String[] data = new String[] {"Monday", "Tuesday", "Wednesday",
+            "Thursday", "Friday", "Saturday", "Sunday"};
 
-    //dialog box
+    //Dialog box
     private TextView dayTextView;
     private TextView mealNameTextView;
     private TextView ingredientsTextView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

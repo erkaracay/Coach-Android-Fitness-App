@@ -1,142 +1,62 @@
 {
-  "week1": [
+  "Muscle Gain Workout Program": [
     {
       "day": "Monday",
-      "workout": [
-        {
-          "exercise": "Squats",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Deadlifts",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Bench press",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Bicep curls",
-          "sets": 3,
-          "reps": 8
-        },
-        {
-          "exercise": "Tricep dips",
-          "sets": 3,
-          "reps": 8
-        }
-      ]
+      "exercise": {
+        "name": "Squats",
+        "sets": 4,
+        "reps": 8
+      }
     },
     {
       "day": "Tuesday",
-      "workout": [
-        {
-          "exercise": "Running",
-          "sets": 1,
-          "reps": 30
-        },
-        {
-          "exercise": "Dumbbell curls",
-          "sets": 3,
-          "reps": 8
-        },
-        {
-          "exercise": "Tricep pushdowns",
-          "sets": 3,
-          "reps": 8
-        }
-      ]
+      "exercise": {
+        "name": "Running",
+        "sets": 1,
+        "reps": 30
+      }
     },
     {
       "day": "Wednesday",
-      "workout": "Rest day"
+      "exercise": {
+        "name": "Rest Day",
+        "sets": 1,
+        "reps": 1
+        }
     },
     {
       "day": "Thursday",
-      "workout": [
-        {
-          "exercise": "Squats",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Deadlifts",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Bench press",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Shoulder press",
-          "sets": 3,
-          "reps": 8
-        },
-        {
-          "exercise": "Lat pulldowns",
-          "sets": 3,
-          "reps": 8
-        }
-      ]
+      "exercise": {
+        "name": "Lat pulldowns",
+        "sets": 3,
+        "reps": 8
+      }
     },
     {
       "day": "Friday",
-      "workout": [
-        {
-          "exercise": "Cycling",
-          "sets": 1,
-          "reps": 30
-        },
-        {
-          "exercise": "Leg press",
-          "sets": 3,
-          "reps": 8
-        },
-        {
-          "exercise": "Calf raises",
-          "sets": 3,
-          "reps": 8
-        }
-      ]
+      "exercise": {
+        "name": "Calf raises",
+        "sets": 3,
+        "reps": 8
+      }
     },
     {
       "day": "Saturday",
-      "workout": [
-        {
-          "exercise": "Squats",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Deadlifts",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Bench press",
-          "sets": 4,
-          "reps": 8
-        },
-        {
-          "exercise": "Lunges",
-          "sets": 3,
-          "reps": 8
-        },
-        {
-          "exercise": "Step ups",
-          "sets": 3,
-          "reps": 8
-        }
-      ]
+      "exercise": {
+        "name": "Step ups",
+        "sets": 3,
+        "reps": 8
+      }
     },
     {
       "day": "Sunday",
-      "workout": "Rest day"
+      "exercise": [
+        {
+          "name": "Rest Day",
+          "sets": 1,
+          "reps": 1
+        }
+      ]
     }
   ]
 }

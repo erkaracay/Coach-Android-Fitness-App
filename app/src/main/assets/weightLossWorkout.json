@@ -2,76 +2,60 @@
   "Weight Loss Workout Program": [
     {
       "day": "Monday",
-      "workout": [
-        {
-          "exercise": "Cardio (running, cycling, or swimming)",
-          "sets": 1,
-          "reps": 30
-        },
-        {
-          "exercise": "Full body strength training circuit",
-          "sets": 3,
-          "reps": 12
-        }
-      ]
+      "exercise": {
+        "name": "Full body strength training circuit",
+        "sets": 3,
+        "reps": 12
+      }
     },
     {
       "day": "Tuesday",
-      "workout": "Rest day"
+      "exercise": {
+        "name": "Rest Day",
+        "sets": 1,
+        "reps": 1
+      }
     },
     {
       "day": "Wednesday",
-      "workout": [
-        {
-          "exercise": "High intensity interval training (HIIT)",
-          "sets": 1,
-          "reps": 30
-        },
-        {
-          "exercise": "Core strengthening exercises (planks, Russian twists, etc.)",
-          "sets": 3,
-          "reps": 12
-        }
-      ]
+      "exercise": {
+        "name": "Core strengthening exercises (planks, Russian twists, etc.)",
+        "sets": 3,
+        "reps": 12
+      }
     },
     {
       "day": "Thursday",
-      "workout": [
+      "exercise": 
         {
-          "exercise": "Yoga or Pilates",
+          "name": "Yoga or Pilates",
           "sets": 1,
           "reps": 30
         }
-      ]
     },
     {
       "day": "Friday",
-      "workout": [
-        {
-          "exercise": "Cardio (running, cycling, or swimming)",
-          "sets": 1,
-          "reps": 30
-        },
-        {
-          "exercise": "Lower body strength training circuit",
-          "sets": 3,
-          "reps": 12
-        }
-      ]
+      "exercise": {
+        "name": "Cardio (running, cycling, or swimming)",
+        "sets": 1,
+        "reps": 30
+      }
     },
     {
       "day": "Saturday",
-      "workout": [
-        {
-          "exercise": "Outdoor activities (hiking, rock climbing, etc.)",
-          "sets": 1,
-          "reps": 45
-        }
-      ]
+      "exercise": {
+        "name": "Outdoor activities (hiking, rock climbing, etc.)",
+        "sets": 1,
+        "reps": 45
+      }
     },
     {
       "day": "Sunday",
-      "workout": "Rest day"
+      "exercise": {
+        "name": "Rest Day",
+        "sets": 1,
+        "reps": 1
+      }
     }
   ]
 }

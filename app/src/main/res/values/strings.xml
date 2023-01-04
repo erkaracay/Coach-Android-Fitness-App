@@ -3,4 +3,7 @@
     <string name="swipeupdown">SWIPE UP OR DOWN</string>
     <string name="diet">Diet</string>
     <string name="workout">Workout</string>
+    <string name="workoutResult">Your Workout Program</string>
+    <string name="select">Select</string>
+    <string name="day">Day</string>
 </resources>

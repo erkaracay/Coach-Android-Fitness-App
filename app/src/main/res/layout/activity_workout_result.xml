@@ -3,24 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1e25b0"
+    android:background="#ff0100"
     android:orientation="vertical"
-    tools:context=".DietActivity">
+    tools:context=".WorkoutResultActivity">
 
     <TextView
-        android:id="@+id/tvDietTitle"
+        android:id="@+id/tvWorkoutResultTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="@string/diet"
+        android:text="@string/workoutResult"
         android:textAlignment="center"
-        android:textColor="#DADADA"
-        android:textSize="60sp"
+        android:textColor="#303030"
+        android:textSize="42sp"
         android:textStyle="bold|italic" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerWorkoutResults"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />
+
 </LinearLayout>
