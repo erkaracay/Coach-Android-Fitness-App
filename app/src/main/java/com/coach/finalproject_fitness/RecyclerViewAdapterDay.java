@@ -2,6 +2,7 @@ package com.coach.finalproject_fitness;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -79,8 +81,11 @@ public class RecyclerViewAdapterDay extends RecyclerView.Adapter<RecyclerViewAda
             dayItem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(context, String.valueOf(arrayList.get(getAdapterPosition())),
-                            Toast.LENGTH_SHORT).show();
+                    Intent intent = null;
+                    intent = new Intent(context,DetailActivity.class);
+                    context.startActivity(intent);
+                    //Toast.makeText(context, String.valueOf(arrayList.get(getAdapterPosition())),
+                          //  Toast.LENGTH_SHORT).show();
                 }
             });
         }

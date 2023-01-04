@@ -4,16 +4,14 @@ public class Diet {
 
     private String day;
     private String meal;
-    private String name;
-    private String ingredients;
+    //private String name;
+    //private String ingredients;
 
-    public Diet(String day, String meal, String name, String ingredients) {
+
+    public Diet(String day, String meal) {
         this.day = day;
         this.meal = meal;
-        this.name = name;
-        this.ingredients = ingredients;
     }
-
 
     public String getDay() {
         return day;
@@ -29,21 +27,5 @@ public class Diet {
 
     public void setMeal(String meal) {
         this.meal = meal;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(String ingredients) {
-        this.ingredients = ingredients;
     }
 }
