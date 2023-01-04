@@ -5,5 +5,5 @@ This is the group term project for our course CTIS 487: Mobile Application Devel
 Contributors:
 - Suphi Erkin Karacay
 - Nihat Özdemir
-- Duygu Elif Dağlaroğluuu
+- Duygu Elif Dağlaroğlu
 - Kaan Bircan
