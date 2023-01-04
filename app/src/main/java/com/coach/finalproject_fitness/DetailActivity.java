@@ -14,6 +14,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -53,6 +54,8 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityDetailBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
@@ -72,9 +75,9 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
         String BOOKS_URL = "https://api.jsonserve.com/-2aRYX";
 
-        JSONObject objtoSend = new JSONObject(); // how data can be send to web server with the JsonObjectRequest
+        JSONObject objtoSend = new JSONObject();
         try {
-            objtoSend.put("findBook", key); //{findbook:two}
+            objtoSend.put("findBook", key);
         } catch (JSONException e) {
             e.printStackTrace();
         }
