@@ -3,6 +3,7 @@ package com.coach.finalproject_fitness;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.WindowManager;
@@ -37,9 +38,13 @@ public class MainActivity extends AppCompatActivity implements Type {
                 if (y1 < y2) {
                     Intent i = new Intent(MainActivity.this, WorkoutActivity.class);
                     startActivity(i);
+                    final MediaPlayer mp = MediaPlayer.create(this, R.raw.sample);
+                    mp.start();
                 } else if (y1 > y2) {
                     Intent i = new Intent(MainActivity.this, DietActivity.class);
                     startActivity(i);
+                    final MediaPlayer mp = MediaPlayer.create(this, R.raw.sample);
+                    mp.start();
                 }
                 break;
         }
