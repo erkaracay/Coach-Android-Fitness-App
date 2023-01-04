@@ -13,21 +13,15 @@ public class MainActivity extends AppCompatActivity implements Type {
 
     float x1, y1, x2, y2;
 
-
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Hiding title bar using code
+        // Hiding title and status bar using code
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_main);
-
-        // Hiding the status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
+        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -41,10 +35,10 @@ public class MainActivity extends AppCompatActivity implements Type {
                 x2 = touchEvent.getX();
                 y2 = touchEvent.getY();
                 if (y1 < y2) {
-                    Intent i = new Intent(MainActivity.this, Workout.class);
+                    Intent i = new Intent(MainActivity.this, WorkoutActivity.class);
                     startActivity(i);
                 } else if (y1 > y2) {
-                    Intent i = new Intent(MainActivity.this, Diet.class);
+                    Intent i = new Intent(MainActivity.this, DietActivity.class);
                     startActivity(i);
                 }
                 break;

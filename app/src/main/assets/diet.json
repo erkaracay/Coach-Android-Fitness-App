@@ -1,0 +1,85 @@
+{
+  "diet": [
+    {
+      "day": "Monday",
+      "meal": {
+      "name": "Grilled chicken with sweet potato and steamed broccoli",
+        "ingredients": [
+          "4 ounces grilled chicken breast",
+          "1 medium sweet potato",
+          "1 cup steamed broccoli"
+        ]
+     }
+    },
+    {
+      "day": "Tuesday",
+      "meal": {
+        "name": "Salmon with quinoa and roasted vegetables",
+        "ingredients": [
+          "4 ounces baked salmon",
+          "1/2 cup cooked quinoa",
+          "1 cup roasted vegetables (e.g. broccoli, carrots, bell peppers)"
+        ]
+      }
+    },
+    {
+      "day": "Wednesday",
+      "meal": {
+        "name": "Tofu stir-fry with brown rice and mixed vegetables",
+        "ingredients": [
+          "4 ounces stir-fried tofu",
+          "1/2 cup cooked brown rice",
+          "1 cup mixed vegetables (e.g. bell peppers, onions, carrots)",
+          "1 tablespoon soy sauce",
+          "1 teaspoon sesame oil"
+        ]
+      }
+    },
+    {
+      "day": "Thursday",
+      "meal": {
+        "name": "Beef and vegetable skewers with quinoa",
+        "ingredients": [
+          "4 ounces beef sirloin",
+          "1 cup mixed vegetables (e.g. bell peppers, onions, cherry tomatoes)",
+          "1/2 cup cooked quinoa"
+        ]
+      }
+    },
+    {
+      "day": "Friday",
+      "meal": {
+        "name": "Turkey chili with whole grain bread",
+        "ingredients": [
+          "4 ounces ground turkey",
+          "1/2 cup canned kidney beans",
+          "1/2 cup canned diced tomatoes",
+          "1/2 cup mixed vegetables (e.g. bell peppers, onions, carrots)",
+          "1 slice whole grain bread"
+        ]
+      }
+    },
+    {
+      "day": "Saturday",
+      "meal": {
+        "name": "Grilled shrimp with mixed vegetables and brown rice",
+        "ingredients": [
+          "4 ounces grilled shrimp",
+          "1 cup mixed vegetables",
+          "1/2 cup cooked brown rice"
+        ]
+      }
+    },
+    {
+      "day": "Sunday",
+      "meal": {
+        "name": "Egg white omelette with spinach and whole grain toast",
+        "ingredients": [
+          "3 egg whites",
+          "1 cup spinach",
+          "1 slice whole grain bread"
+        ]
+      }
+    }
+  ]
+}
