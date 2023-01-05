@@ -25,7 +25,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecycl
 
     @NonNull
     @Override
-    public CustomRecyclerViewAdapter.CustomItemHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public CustomItemHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflator = LayoutInflater.from(viewGroup.getContext());
 
         View itemView = inflator.inflate(R.layout.detail_recycler_item, viewGroup, false);
@@ -36,6 +36,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecycl
 
     @Override
     public void onBindViewHolder(@NonNull CustomRecyclerViewAdapter.CustomItemHolder myRecyclerViewItemHolder, int i) {
+
         final Diet dietItem = recyclerItemValues.get(i);
 
         myRecyclerViewItemHolder.day.setText(dietItem.getDay());

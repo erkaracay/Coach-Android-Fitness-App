@@ -42,9 +42,9 @@ public class RecyclerViewAdapterWorkoutResults extends RecyclerView.Adapter<Recy
         arrayList = getData();
         Exercise exercise = arrayList.get(position).getExercise();
         holder.tvDay.setText(days[position]);
-        holder.tvExName.setText(exercise.getName());
-        holder.tvSet.setText(exercise.getSetCount());
-        holder.tvRep.setText(exercise.getRepCount());
+        //holder.tvExName.setText(exercise.getName());
+        //holder.tvSet.setText(exercise.getSetCount());
+        //holder.tvRep.setText(exercise.getRepCount());
     }
 
     @Override
